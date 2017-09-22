@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nutritio | Mise en place d&#039;une application mobile ciblée sur la nutrition</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://nutritioapp.wordpress.com/xmlrpc.php">
+
+<link rel='dns-prefetch' href='//s2.wp.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//s1.wp.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Nutritio &raquo; Flux" href="https://nutritioapp.wordpress.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Nutritio &raquo; Flux des commentaires" href="https://nutritioapp.wordpress.com/comments/feed/" />
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+			<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s0.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1505864856h&ver=4.8.2"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='all-css-0-1' href='https://s0.wp.com/_static/??-eJx9j9EOgjAMRX/IupAo4oPxW2A0MFi3hnZB/96B4cWYvTT3Nvekt2ZlsDEoBjWUgH0aXBCzso0EQs7j+8edrcjJ/Me8m1HMhMqtnWF3pbiNC+Y9catbgrB3LXqkHCthq+sH1IzLoUHxVUSI6+PQJsdcr9js+3HX8YIikCe5RKBj7rZzT3pUl3vd3KrmWk0fmYd5ZA==' type='text/css' media='all' />
+<link rel='stylesheet' id='hemingway-rewritten-fonts-css'  href='https://fonts.googleapis.com/css?family=Raleway%3A400%2C300%2C700%7CLato%3A400%2C700%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='all-css-2-1' href='https://s1.wp.com/_static/??-eJyFkEEOwiAQRS8kTo3twoXxLBSnOBYYAjTY24shTWqM7e79fF7+BMheKHYJXYL0QIsR/NRDIXI6y1kEzIFS6SGm2eBRxXiAlWQn4c2kyUXQ6DBQKf7gj7szSE7VUZG9Yrs1nemuMUUYpMKeeRSGxgKv/aMXM7IiaUS9eR2qTOA41XKB7a9gYVjJROy+ghiMpLClBuwN64IayqtV/Eg3ez11Tddezl3bPN+5B6hF' type='text/css' media='all' />
+<link rel='stylesheet' id='print-css-3-1' href='https://s0.wp.com/wp-content/mu-plugins/global-print/global-print.css?m=1465851035h' type='text/css' media='print' />
+<link rel='stylesheet' id='all-css-4-1' href='https://s2.wp.com/_static/??/wp-content/mu-plugins/actionbar/actionbar.css,/wp-content/themes/h4/global.css?m=1490786585j' type='text/css' media='all' />
+<script type='text/javascript' src='https://s1.wp.com/_static/??-eJyFztEKwjAMBdAfsquTiXsRv6XWOFKXtDbphn69HeiDMBQCgdzDJXZOBtmP5QJiQ517gfx4rybIxv4ChnDITqEh5A/2kRVYF0vxjCOYIpDdUG+16BpXXIqiBCIVraTfLyFPCPNfFkCT8zeTQfC5tJ7o2Hb9Yde3+24bXjRNW9I='></script>
+<link rel='stylesheet' id='all-css-0-2' href='https://s1.wp.com/wp-content/mu-plugins/highlander-comments/style.css?m=1377793621h' type='text/css' media='all' />
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='https://s1.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563h&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://nutritioapp.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress.com" />
+<link rel='shortlink' href='http://wp.me/9bsF8' />
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Nutritio" />
+<meta property="og:description" content="Mise en place d&#039;une application mobile ciblée sur la nutrition" />
+<meta property="og:url" content="https://nutritioapp.wordpress.com/" />
+<meta property="og:site_name" content="Nutritio" />
+<meta property="og:image" content="https://s0.wp.com/i/blank.jpg" />
+<meta property="og:locale" content="fr_FR" />
+<meta name="twitter:site" content="@wordpressdotcom" />
+<meta property="fb:app_id" content="249643311490" />
+<link rel="shortcut icon" type="image/x-icon" href="https://s2.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48" />
+<link rel="icon" type="image/x-icon" href="https://s2.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48" />
+<link rel="apple-touch-icon-precomposed" href="https://s0.wp.com/i/webclip.png" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://nutritioapp.wordpress.com/osd.xml" title="Nutritio" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com" />
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+				<style type="text/css">
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+			}
+		</style>
+		<meta name="application-name" content="Nutritio" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Mise en place d&#039;une application mobile ciblée sur la nutrition" /><meta name="msapplication-task" content="name=Souscrire;action-uri=https://nutritioapp.wordpress.com/feed/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=Inscrivez-vous pour créer un blog gratuitement;action-uri=http://wordpress.com/signup/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=Assistance WordPress.com;action-uri=http://support.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=Forums WordPress.com;action-uri=http://forums.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="title" content="Nutritio sur WordPress.com" />
+<meta name="description" content="Mise en place d&#039;une application mobile ciblée sur la nutrition" />
+	<style type="text/css">
+			.site-title a,
+		.site-description {
+			color: #ffffff;
+		}
+				.site-header-image {
+			background-image: url(https://nutritioapp.files.wordpress.com/2017/09/cropped-early_morning_abstract-wallpaper-3554x1999.jpg);
+		}
+		</style>
+	<style type="text/css" id="syntaxhighlighteranchor"></style>
+</head>
+
+<body class="home blog mp6 customizer-styles-applied highlander-enabled highlander-light">
+<div id="page" class="hfeed site">
+
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-header-image">
+			<div class="site-branding-wrapper">
+				<div class="site-branding">
+					<h1 class="site-title"><a href="https://nutritioapp.wordpress.com/" rel="home">Nutritio</a></h1>
+					<h2 class="site-description">Mise en place d&#039;une application mobile ciblée sur la nutrition</h2>
+				</div>
+			</div>
+		</div>
+	</header><!-- #masthead -->
+	<nav id="site-navigation" class="main-navigation clear" role="navigation">
+		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="screen-reader-text">Menu</span></button>
+		<a class="skip-link screen-reader-text" href="#content">Aller au contenu principal</a>
+
+		<div id="primary-menu" class="menu"><ul>
+<li class="current_page_item"><a href="https://nutritioapp.wordpress.com/">Accueil</a></li><li class="page_item page-item-2"><a href="https://nutritioapp.wordpress.com/a-propos/">À propos</a></li>
+<li class="page_item page-item-3"><a href="https://nutritioapp.wordpress.com/contact/">Contact</a></li>
+</ul></div>
+		<div id="header-search-toggle">
+			<span class="screen-reader-text">Recherche</span>
+		</div>
+		<div id="header-search">
+			<form role="search" method="get" class="search-form" action="https://nutritioapp.wordpress.com/">
+				<label>
+					<span class="screen-reader-text">Rechercher&nbsp;:</span>
+					<input type="search" class="search-field" placeholder="Recherche&hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Rechercher" />
+			</form>		</div>
+	</nav><!-- #site-navigation -->
+	<div id="content" class="site-content">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+
+
+
+
+<article id="post-24" class="post-24 post type-post status-publish format-standard hentry category-non-classe">
+	<header class="entry-header">
+							<h1 class="entry-title"><a href="https://nutritioapp.wordpress.com/2017/09/19/projet-nutritio-cest-parti/" rel="bookmark">Projet Nutritio : C&rsquo;est parti&nbsp;!</a></h1>						<div class="entry-meta">
+			<span class="posted-on"><a href="https://nutritioapp.wordpress.com/2017/09/19/projet-nutritio-cest-parti/" rel="bookmark"><time class="entry-date published" datetime="2017-09-19T20:32:02+00:00">19 septembre 2017</time><time class="updated" datetime="2017-09-21T10:02:27+00:00">21 septembre 2017</time></a></span><span class="byline"><span class="sep"> / </span><span class="author vcard"><a class="url fn n" href="https://nutritioapp.wordpress.com/author/matthieublm/">MatthieuBlm</a></span></span>						<span class="comments-link"><span class="sep"> / </span><a href="https://nutritioapp.wordpress.com/2017/09/19/projet-nutritio-cest-parti/#respond">Poster un commentaire</a></span>
+								</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+		<div class="entry-content">
+		<p>Salut à toi <strong>internaute</strong> !</p>
+<p>T&rsquo;en as jamais eu marre de réfléchir à ce que tu dois manger le soir ? En plus de ça, en faisant attention à ce que ce soit équilibré et bon pour ta santé ? Eh bien nous, si !</p>
+<p>Alors, que dirais-tu d&rsquo;avoir dans ta poche un assistant personnel qui soit, à la fois une liste de recette <em>smart</em> et un coach alimentaire.</p>
+<p>Voilà comment nous est venue l&rsquo;idée de concevoir l&rsquo;application mobile <strong>Nutritio</strong><em>, </em>t&rsquo;aidant à faire tout cela. Derrière ce &laquo;&nbsp;nous&nbsp;&raquo; se cachent trois étudiants en informatique, voulant partager leur passion pour la nutrition.</p>
+<p>Tu trouveras sur ce blog toutes les <em>news </em>relatives à ce projet innovant ainsi que quelques astuces en guise d&rsquo;amuse bouche 😉</p>
+<p>A bientôt cher <strong>internaute</strong> !</p>
+			</div><!-- .entry-content -->
+	</article><!-- #post-## -->
+
+
+
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+
+	<div id="secondary" class="widget-area" role="complementary">
+		<!-- Invalid Facebook Page URL --><aside id="authors-3" class="widget widget_authors"><h1 class="widget-title">AUTEURS</h1><ul><li><img alt='' src='https://0.gravatar.com/avatar/c6d1ff9caddcb3c1e8f5315b735fef40?s=48&#038;d=identicon&#038;r=G' class='avatar avatar-48' height='48' width='48' /> <strong>Abigaïl Lambin</strong></li><li><img alt='' src='https://0.gravatar.com/avatar/079d307df36a815ddddb821502a737ee?s=48&#038;d=identicon&#038;r=G' class='avatar avatar-48' height='48' width='48' /> <strong>cbreuzon</strong></li><li><a href="https://nutritioapp.wordpress.com/author/matthieublm/"> <img alt='' src='https://0.gravatar.com/avatar/025c316abe7feb97ecfc1c3d614ed916?s=48&#038;d=identicon&#038;r=G' class='avatar avatar-48' height='48' width='48' /> <strong>MatthieuBlm</strong></a></li></ul></aside><aside id="text-1" class="widget widget_text"><h1 class="widget-title">QUI SOMMES-NOUS ?</h1>			<div class="textwidget"><p>Matthieu, Camille et Abigaïl, étudiants en Informatique à l&rsquo;Université de Lille 1.</p>
+<p>Dans le cadre d&rsquo;un enseignement, nous nous devons de créer une application mobile innovante.</p>
+</div>
+		</aside><aside id="text-3" class="widget widget_text"><h1 class="widget-title">L&rsquo;APPLICATION</h1>			<div class="textwidget"><p>Blablablablabla..</p>
+</div>
+		</aside>	</div><!-- #secondary -->
+
+	</div><!-- #content -->
+	<footer id="colophon" class="site-footer" role="contentinfo">
+			<div id="tertiary" class="widget-areas clear" role="complementary">
+					<div class="widget-area">
+				<aside id="recent-comments-3" class="widget widget_recent_comments"><h1 class="widget-title">Commentaires récents</h1></aside>			</div>
+							</div><!-- #tertiary -->
+		<div class="site-info">
+			<a href="https://wordpress.com/?ref=footer_blog">Propulsé par WordPress.com.</a>
+
+					</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<!--  -->
+<script type='text/javascript' src='//0.gravatar.com/js/gprofiles.js?ver=201738y'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s1.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781h'></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	<div class="grofile-hash-map-c6d1ff9caddcb3c1e8f5315b735fef40">
+	</div>
+	<div class="grofile-hash-map-079d307df36a815ddddb821502a737ee">
+	</div>
+	<div class="grofile-hash-map-025c316abe7feb97ecfc1c3d614ed916">
+	</div>
+	</div>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Connexion\u2026","submittingText":"Publication d'un Commentaire\u2026","postCommentText":"Laisser un commentaire","connectingToText":"Connexion \u00e0 %s","commentingAsText":"%1$s: Vous commentez \u00e0 l'aide de votre compte %2$s.","logoutText":"Se d\u00e9connecter","loginText":"Connexion","connectURL":"https:\/\/nutritioapp.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"https:\/\/nutritioapp.wordpress.com\/wp-login.php?action=logout&_wpnonce=9c75ff3502","homeURL":"https:\/\/nutritioapp.wordpress.com\/","postID":"24","gravDefault":"identicon","enterACommentError":"Entrez un commentaire","enterEmailError":"Veuillez entrer votre adresse mail","invalidEmailError":"Adresse email invalide","enterAuthorError":"Veuillez entrer votre nom","gravatarFromEmail":"L\u2019image s\u2019affiche lorsque vous postez un commentaire. Cliquez pour personnaliser.","logInToExternalAccount":"Connectez-vous pour utiliser les informations li\u00e9es \u00e0 un de ces comptes:","change":"Changer","changeAccount":"Changer de compte","comment_registration":"0","userIsLoggedIn":"","isJetpack":"0","text_direction":"ltr"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s2.wp.com/_static/??/wp-content/js/jquery/jquery.autoresize.js,/wp-content/mu-plugins/highlander-comments/script.js?m=1479964158j'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var jpfbembed = {"appid":"249643311490","locale":"fr_FR"};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var actionbardata = {"siteID":"135718814","siteName":"Nutritio","siteURL":"http:\/\/nutritioapp.wordpress.com","icon":"<img alt='' src='https:\/\/s1.wp.com\/i\/logo\/wpcom-gray-white.png' class='avatar avatar-50' height='50' width='50' \/>","canManageOptions":"","canCustomizeSite":"","isFollowing":"","themeSlug":"pub\/hemingway-rewritten","signupURL":"https:\/\/wordpress.com\/start\/","loginURL":"https:\/\/nutritioapp.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fnutritioapp.wordpress.com%2F2017%2F09%2F19%2Fprojet-nutritio-cest-parti%2F","themeURL":"https:\/\/wordpress.com\/theme\/hemingway-rewritten\/","xhrURL":"https:\/\/nutritioapp.wordpress.com\/wp-admin\/admin-ajax.php","nonce":"9f03cf7db2","isSingular":"","isFolded":"","isLoggedIn":"","isMobile":"","subscribeNonce":"<input type=\"hidden\" id=\"_wpnonce\" name=\"_wpnonce\" value=\"c1dcfa77ad\" \/>","referer":"https:\/\/nutritioapp.wordpress.com\/","canFollow":"1","feedID":"72539345","statusMessage":"","customizeLink":"https:\/\/nutritioapp.wordpress.com\/wp-admin\/customize.php?url=https%3A%2F%2Fnutritioapp.wordpress.com%2F","i18n":{"view":"Afficher le site","follow":"Suivre","following":"Abonn\u00e9","edit":"Modifier","login":"Connexion","signup":"S'inscrire","customize":"Personnaliser","report":"Signaler ce contenu","themeInfo":"Obtenir le th\u00e8me: Hemingway Rewritten","shortlink":"Copier shortlink","copied":"Copi\u00e9","followedText":"Les nouveaux articles de ce site appara\u00eetront d\u00e9sormais dans votre <a href=\"https:\/\/wordpress.com\/\">lecteur<\/a>","foldBar":"R\u00e9duire cette barre","unfoldBar":"\u00c9tendre cette barre","editSubs":"G\u00e9rer les abonnements","viewReader":"Voir le site dans le Lecteur","viewReadPost":"View post in Reader","subscribe":"Inscrivez-moi","enterEmail":"Entrez votre adresse e-mail","followers":"","alreadyUser":"Vous disposez d\u00e9j\u00e0 d\u02bcun compte WordPress ? <a href=\"https:\/\/nutritioapp.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fnutritioapp.wordpress.com%2F2017%2F09%2F19%2Fprojet-nutritio-cest-parti%2F\">Connectez-vous maintenant.<\/a>","stats":"Statistiques"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s1.wp.com/_static/??-eJydT0muwjAMvdD3Nwi6YIE4CnITt7hpBjK0cHvSDUIIVYLd0xttnAMo7zK7jENCzZMoDrf/If3hi2QLhLH04hKOYjjhtXDhCzk9cnw35wvbagmlxYrE9TPdIfIcJVd9mflAf1/iaJKesvgfsslIgFGcgc6rkqCTtZcHzoGUwbM4hR0pbr03wLZlvZIiXaehpYiWUuZYEfiJYxRdj3tyaw1q+W5peKLqPtnjttk0+8Ou2W+GB4XJqTQ='></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>	<script type="text/javascript">
+	var skimlinks_pub_id = "725X584219"
+	var skimlinks_sitename = "nutritioapp.wordpress.com";
+	</script>
+	<script type="text/javascript" defer src="https://s.skimresources.com/js/725X1342.skimlinks.js"></script><script src="//stats.wp.com/w.js?56" type="text/javascript" async defer></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'135718814','blog_tz':'1','user_lang':'fr','blog_lang':'fr','user_id':'0'}]);
+_stq.push(['view', {'blog':'135718814','v':'wpcom','tz':'1','user_id':'0','subd':'nutritioapp'}]);
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1mJVY3bm9aR3VCbS9mWm1pRyZuJS1LX1t5QmRXZzE3RC9rQWZHK1FjbDltdWdaMVFFZTcxUGVHLWR0WTJoQW56WmlsWFtyWXVuY1hpPW4xYWc4end2NjctRmtHUUc5d2xKaFFQOXZOMD9MYWxzQiZBOWJrQUV3R19JW2pHNltaciVaZW5Eb1Ewb1twWGVNSz9OZCUlN0tDNVplb2djandObz9sLG9xW1ZYJWUtb2MvbGtKdGtpP0xRfFtqcz92bXUtRUdbM3hPcHJlRHJIbk5xLk9XaTlfYVNiMHVtV3A/Zjc2cnVidy9vdFtFZlZaNnYrZiVKTmpNc3YmVWJpWWhZMXY5d2RGOXJiPUpieEdhNQ=='}]);
+_stq.push([ 'clickTrackerInit', '135718814', '0' ]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+
+}
+</script>
+</body>
+</html>
