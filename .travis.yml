@@ -1,12 +1,6 @@
 language: java
-
-matrix:
-  include:
-    - jdk : "oraclejdk8"
-
-before_install:
-  npm install -g bower
-  bower install
+jdk :
+  - oraclejdk8
 
 script:
-- javac superFichierTest.java
+  - javac superFichierTest.java
