@@ -1,9 +1,12 @@
 language: java
-jdk:
-- oraclejdk8
+
+matrix:
+  include:
+    - jdk : "oraclejdk8"
+
+before_install:
+  npm install -g bower
+  bower install
 
 script:
-- mvn test
-- bash scripts/coveralls.sh
-- mvn failsafe:integration-test
-- bash scripts/e2e.sh
+- javac superFichierTest.java
